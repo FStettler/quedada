@@ -1,0 +1,42 @@
+<h1>Quedada</h1>
+
+<form action="{% url 'quedada' %}">
+
+    Nombre: <input type="textbox" name="nombre">
+    <br>
+    <br>
+    Gasto: <input type="textbox" name="gasto">
+    <br>
+    <br>
+    Importe: <input type="textbox" name="importe">
+    <br>
+    <br>
+    <input type="submit" value="Carga datos" class="btn btn-primary">
+
+</form>
+<br>
+<br>
+{{ nombre }}
+
+{{ gasto }}
+{{ importe }}
+
+<table name="datos">
+    <tr>
+        <th>Nombre</th>
+        <th>Gasto</th>
+        <th>Importe</th>
+        <th>Acción</th>
+    </tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+            <a href="">Delete</a>
+            
+            <a href="">Update</a>
+        </td>
+
+</table>
+<br>
+<a href="{% url 'home' %}">Home</a>
